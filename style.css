@@ -1,5 +1,6 @@
 html, body {
   height: 100vh;
+  background-color: #141414
 }
 
 * {
@@ -7,24 +8,63 @@ html, body {
   margin: 0;
 }
 
+#full-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  justify-items: center;
+  justify-content: center;
+  align-content: center;
+
+}
+
+.text-span {
+  background-color: rgba(0,0,0,.5);
+  padding: 20px;
+  margin: 5px;
+  max-width: 70%;
+}
+
 .section {
+  color: #fff;
   font-family: 'Roboto', sans-serif;
   height: 100vh;
   display: flex;
+  flex-direction: column;
   object-fit: contain;
   background: fixed no-repeat;
   background-size: 100vw 100vh;
   text-align: center;
-  justify-content: center;
   align-items: center;
   font-size: 2em;
+  align-content: center;
+  justify-content: center;
+}
+
+.section:nth-of-type(1) {
+  background-color: #1681fb;
+  /*clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);*/
+}
+
+.section:nth-of-type(2) {
+  height: 10vh;
+}
+
+.shadowed {
+  box-shadow: 5px 15px 8px 10px #888888;
 }
 
 .section:nth-of-type(3) {
-  background-image: url('img/alex-jones-6800-unsplash.jpg');
-  color: #fff;
+  background: url('img/construction1.jpg') fixed no-repeat center #1681fb;
+  background-size: 75vw;
+  /*clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);*/
 }
 
 .section:nth-of-type(5) {
-  background-image: url('img/barn-images-12223-unsplash.jpg');
+  background: url('img/construction2.jpg') fixed no-repeat center #1681fb;
+  background-size: 75vw;
+}
+
+.logo-img {
+  height: 100vh;
 }
